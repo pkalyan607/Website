@@ -22,15 +22,61 @@ body {
 			left:0;
 			flex-shrink: 0;
 			position: absolute;
-			background-color: lightblue;
+			background-color:paleturquoise;
+			text-decoration: none;
+			margin-right: 0px;
 		}
 		
 		#content {
-			margin-left: calc(var(--width) + 0.5vw);
-			margin-right: 0.5vw;
+			margin-left: calc(var(--width));
+			margin-right:0px;
 
 		}
 a:link{color:white;}
 a:visited{color:royalblue;}
 a:active{color:red;}
 a:hover{color:deeppink;}
+
+.circle_image{
+	border-radius: 100%;
+	width:35px;
+	height:35px;
+	}
+
+.bgimg{
+	background:url("b2.jpg") ;
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-position: right;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	height:100%;
+	min-height: 100%;
+   min-width: 1024px;
+	
+  
+  width: 100%;
+  height: auto;
+	
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#dynamic{
+	width: 100vh;
+	height:80vh;
+	box-align: right;
+	min-width: 1098px;
+}
+
+
+
+#dynamic2{
+	width: 100vh;
+	height:80vh;
+	box-align: right;
+	min-width: 1098px;
+}

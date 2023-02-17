@@ -7,34 +7,60 @@
 <body>
 	<div id="left-div">
 		<ul>
-			<img src="contact.jpg" style="width:50px; height:50px">
-			<li><a href="contact.html"><b>Contact</b></a></li>
+			<img  class="circle_image" src="contact.jpg" >
+			<li><a style="text-decoration:none;" href="contact.html"><b>Contact</b></a></li>
 			<br>
-			<img src="about.avif" style="width:50px; height:50px">
-			<li><a href="about.html"><b>About</b></a></li>
+			<img  class="circle_image" src="about.png" >
+			<li><a style="text-decoration:none;" href="about.html"><b>About</b></a></li>
 		</ul>
 	</div>
 
 	<div id="content">
-	<p style="color:blue;"><b> Reach IIIT Kottayam </b></p>
-	<p> IIIT Kottayam permanent Campus is located in Valavoor village, Pala, Kottayam. The Campus is about 10 km away from Pala which is en route to IIIT Kottayam.</p>
+	<p style="color:blue;"><b>&nbsp; Reach IIIT Kottayam </b></p>
+	<p >&nbsp;IIIT Kottayam permanent Campus is located in Valavoor village, Pala, Kottayam. The Campus is about 10 km away from Pala which is en route to IIIT Kottayam.</p>
 
-	<p style = "color:blue;"><b>From the Airport</b></p>
-	<p>IIIT Kottayam is about 70 km from the Cochin International Airport, Nedumbassery. A taxi will cost around Rs. 2000/- from Airport to IIIT Kottayam campus.</p>
+	<p style = "color:blue;"><b>&nbsp;From the Airport</b></p>
+	<p>&nbsp;IIIT Kottayam is about 70 km from the Cochin International Airport, Nedumbassery. A taxi will cost around Rs. 2000/- from Airport to IIIT Kottayam campus.</p>
 
-	<p style="color:blue;"> <b>From the Railway Station/KSRTC Bus Station</b></p>
-	<p>IIIT Kottayam is about 40 km from Kottayam Railway Station/KSRTC Bus Station. KSRTC (Kerala State Road Transport Corporation) bus services are available from KSRTC Bus Station to Pala.From Pala You can hire an auto/taxi or othewise you can opt for private buses to Valavoor Junction & then you can hire an auto to IIIT Kottayam campus. </p>
+	<p style="color:blue;"> <b>&nbsp;From the Railway Station/KSRTC Bus Station</b></p>
+	<p>&nbsp;IIIT Kottayam is about 40 km from Kottayam Railway Station/KSRTC Bus Station. KSRTC (Kerala State Road Transport Corporation) bus services are available from &nbsp;KSRTC Bus Station to Pala.From Pala You can hire an auto/taxi or othewise you can opt for private buses to Valavoor Junction & then you can hire an auto to IIIT Kottayam &nbsp;campus. </p>
 
-	<p style = "color:blue;"> <b>Hotels Nearby IIIT Kottayam </b></p>
+	<p style = "color:blue;"> <b>&nbsp;Hotels Nearby IIIT Kottayam </b></p>
+			<script >
+		var i = 0;
+		var images = [];
+		var time = 2000;
+		images[0] = 'maharanihotel.jpg';
+		images[1] = 'armaniResid.jpg';
+		images[2] = 'palakunnel.jpg';
+		images[3] = 'oliveHotel.avif';
+		images[4] = 'sunstar.jpg';
 
-	<p><a href = "https://www.iiitkottayam.ac.in/data/pdf/hotels.pdf">List of Hotels </a></p>
+		function changeImg(){
+			document.slide.src = images[i];
+			if(i<images.length-1){
+				i++;
+				} else{
+					i=0;
+				}
+
+				setTimeout("changeImg()", time);
+			}
+			window.onload = changeImg;
+
+
+
+	</script>
+	<img id="dynamic2" name = "slide" width="1000px" height="200">
+
+	<p><a href = "https://www.iiitkottayam.ac.in/data/pdf/hotels.pdf">&nbsp;List of Hotels </a></p>
     <img src="distance.jpg" align="right" style="width:800px; height:80px">
 
-	<h2><p style="color:palevioletred;">Reach Us <img src="call.png" style="width:30px;height:30px;"></p></h2>
-	<p><b>General Enquiry :</b> +91-0482-2202100, <b>Mob :</b> +91 80755 21938</p>
-	
-	<b><p style = "text-align:left; color:blue;">Communication Address</p></b>
-	<p>Indian Institute of Information Technology Kottayam Valavoor.P.O, Pala, Kottayam-686635, Kerala, India.</p>
+	<h2><p style="color:palevioletred;">&nbsp;Reach Us <img src="call.png" style="width:30px;height:30px;"></p></h2>
+	<p><b>&nbsp;General Enquiry :</b> +91-0482-2202100, </p>
+	<p><b>&nbsp;Mob :</b> +91 80755 21938</p>
+	<b><p style = "text-align:left; color:blue;">&nbsp;Communication Address</p></b>
+	<p>&nbsp;Indian Institute of Information Technology Kottayam Valavoor.P.O, Pala, Kottayam-686635, Kerala, India.</p>
 
 	<p><a href = "https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+(IIIT)+Kottayam/@9.7552146,76.6500519,15z/data=!4m6!3m5!1s0x3b07ce23bc170053:0x8757971e61eb21dd!8m2!3d9.7552146!4d76.6500519!16s%2Fg%2F11btxcz4c7"><marquee>Map location link of IIITK </marquee></a></p>
 

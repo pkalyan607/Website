@@ -7,30 +7,52 @@
 
 		<div id="left-div">
 		<ul >
-			<img src="contact.jpg" style="width:50px; height:50px">
-			<li><a href="contact.html"><b>Contact</b></a></li>
+			<img class="circle_image" src="contact.jpg" >
+			<li><a style="text-decoration:none;" href="contact.html"><b>Contact</b></a></li>
 			<br>
-			<img src="about.avif" style="width:50px; height:50px">
-			<li><a href="about.html"><b>About</b></a></li>
+			<img class="circle_image" src="about.png" >
+			<li><a style="text-decoration:none;" href="about.html"><b>About</b></a></li>
 		</ul>
 	</div>
+	
 
 	<div class = "right-box" id="content">
-		<p><img src="iiitk1.jpg" align="right" style="width: 500px; height:200px;"></p>
-		<p><img src="iiitk_logo.jpg" style="width: 200px; height:100px;"></p>
+		<script >
+		var i = 0;
+		var images = [];
+		var time = 2000;
+		images[0] = 'img1.jpg';
+		images[1] = 'img2.jpg';
+		images[2] = 'img3.jpg';
+		images[3] = 'img4.jpg';
+		images[4] = 'img5.jpg';
+
+		function changeImg(){
+			document.slide.src = images[i];
+			if(i<images.length-1){
+				i++;
+				} else{
+					i=0;
+				}
+
+				setTimeout("changeImg()", time);
+			}
+			window.onload = changeImg;
+		</script>
+		<img id="dynamic" name = "slide" width="1000px" height="200">
+		
 	<h1><p style = "color:palevioletred;">IIIT Kottayam Welcomes You</p></h1>
 
 	<p>Indian Institute of Information Technology, Kottayam at Valavoor, Pala, Kerala is one among the IIITs that have been established as "Institutions of National Importance" by Ministry of Education, Govt. of India under the ambit of IIIT (PPP) Act 2017. IIIT Kottayam campus is situated at Valavoor, Pala, Kottayam - a picturous location, spread over in 53 acres of land - allotted by Govt. of Kerala in the southern part of the state commonly referred to as God's Own Country.
 	</p>
 
-	<img src="iiitk2.jpg" align="right" style="width:400px; height:200px">
 	<p style = "color:hotpink;"><b>The institute offers 4 year B.Tech and B.Tech (Hons) program namely:</b></p>
 
 	<ol>
-		<p><li><a href="https://www.iiitkottayam.ac.in/#!/btech_cs_home"> B.Tech in Computer Science and Engineeirng </a></li></p>
-		<p><li><a href="https://www.iiitkottayam.ac.in/#!/btech_ec_home">B.Tech in Electronics and Communication Engineering</a></li></p>
-		<p><li><a href="https://www.iiitkottayam.ac.in/#!/btech_cyber_home">B.Tech in Computer Science and Engineeirng with specialization in Cyber Security</li></p>
-		<p><li><a href="https://www.iiitkottayam.ac.in/#!/btech_ai_home">B.Tech in Computer Science and Engineeirng with specialization in AI and Data Science</li></p>
+		<p><li><a style="text-decoration:none;" href="https://www.iiitkottayam.ac.in/#!/btech_cs_home"> B.Tech in Computer Science and Engineeirng </a></li></p>
+		<p><li><a style="text-decoration:none;" href="https://www.iiitkottayam.ac.in/#!/btech_ec_home">B.Tech in Electronics and Communication Engineering</a></li></p>
+		<p><li><a style="text-decoration:none;" href="https://www.iiitkottayam.ac.in/#!/btech_cyber_home">B.Tech in Computer Science and Engineeirng with specialization in Cyber Security</li></p>
+		<p><li><a style="text-decoration:none;" href="https://www.iiitkottayam.ac.in/#!/btech_ai_home">B.Tech in Computer Science and Engineeirng with specialization in AI and Data Science</li></p>
 	</ol>
 	
 	</div>
